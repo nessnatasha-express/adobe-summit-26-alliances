@@ -55,7 +55,7 @@
   .hero-title .plus { color: #616ed8; }
   .hero-sub {
     font-family:'Space Grotesk',sans-serif; font-size:12px; letter-spacing:3px;
-    text-transform:uppercase; color:#737373; margin-bottom: 18px;
+    text-transform:uppercase; color:#737373; margin-bottom: 36px;
   }
 
   /* TOP CONTENT PILLS */
@@ -151,10 +151,10 @@
 
   .best-for {
     background: rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.07);
-    border-radius:8px; padding:10px 13px; margin-bottom:13px;
+    border-radius:8px; padding:10px 13px; margin-bottom:13px; margin-top:16px;
     display:flex; align-items:flex-start; gap:10px;
   }
-  .best-for-label { font-family:'Space Grotesk',sans-serif; font-size:9px; letter-spacing:1.5px; text-transform:uppercase; font-weight:600; color:#494949; flex-shrink:0; margin-top:2px; }
+  .best-for-label { font-family:'Space Grotesk',sans-serif; font-size:9px; letter-spacing:2px; text-transform:uppercase; font-weight:600; color:#fff; flex-shrink:0; margin-top:2px; }
   .best-for-text { font-size:12.5px; color:#999; line-height:1.55; }
 
   .bf-b2b { border-color: rgba(0,214,233,0.18) !important; }
@@ -169,7 +169,7 @@
 
   .demo-summary { font-size:13px; color:#999; line-height:1.7; margin-bottom:16px; }
 
-  .takeaways-heading { font-family:'Space Grotesk',sans-serif; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#444; font-weight:600; margin-bottom:11px; }
+  .takeaways-heading { font-family:'Space Grotesk',sans-serif; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#fff; font-weight:600; margin-bottom:11px; margin-top:16px; }
   .takeaways-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
   @media(max-width:520px){ .takeaways-grid{ grid-template-columns:1fr; } }
   .takeaway-item { display:flex; align-items:flex-start; gap:9px; }
@@ -267,14 +267,8 @@
     .clients-grid { grid-template-columns: 1fr; }
   }
 
-  .best-for-label.cl-b2b { color: #00d6e9; }
-  .best-for-label.cl-crm { color: #F0C1C1; }
-  .best-for-label.cl-ai  { color: #A68CFF; }
-  .best-for-label.cl-csc { color: #FF5023; }
-  .takeaways-heading.cl-b2b { color: #00d6e9; }
-  .takeaways-heading.cl-crm { color: #F0C1C1; }
-  .takeaways-heading.cl-ai  { color: #A68CFF; }
-  .takeaways-heading.cl-csc { color: #FF5023; }
+  .demo-divider { height:1px; background: rgba(255,255,255,0.07); margin: 14px 0; }
+  .tools-heading { font-family:'Space Grotesk',sans-serif; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#fff; font-weight:600; margin-bottom:11px; margin-top:16px; }
 </style>
 </head>
 <body>
@@ -302,7 +296,7 @@
     <h1 class="hero-title">Dentsu&nbsp;<span class="plus">+</span>&nbsp;<span class="adobe">Adobe</span></h1>
     <p class="hero-sub">Alliances Support at Adobe Summit 2026</p>
     <div class="top-pills">
-      <button class="top-pill green"  onclick="openContentModal('dentsu')">Who is Dentsu</button>
+      <button class="top-pill green"  onclick="openContentModal('dentsu')">Who is Dentsu / Merkle</button>
       <button class="top-pill teal"   onclick="openContentModal('who')">Our Positioning</button>
       <button class="top-pill purple" onclick="openContentModal('differentiator')">Our Differentiator</button>
       <button class="top-pill orange" onclick="openContentModal('clients')">Our Joint Clients</button>
@@ -315,14 +309,19 @@
   <div class="content-modal">
     <button class="content-modal-close" onclick="closeContentModalBtn('dentsu')">&#x2715;</button>
     <div class="content-modal-eyebrow" style="color:#b0f976">Who Is Dentsu</div>
-    <div class="content-modal-title">One Network. End-to-End Capability.</div>
+    <div class="content-modal-title">120+ Years of Innovation & Client Trust</div>
     <div class="content-section">
-      <div class="content-section-body">Dentsu is a global marketing and technology services group operating across media, creative, and CX transformation. We work with the world's most ambitious brands to build the systems that make marketing compound — not just execute.</div>
+      <div class="content-section-body">Dentsu is a global marketing and technology services group. We work with the world's most ambitious brands to build the systems that make marketing compound — not just execute.</div>
     </div>
     <div class="content-section">
-      <div class="content-section-label" style="color:#b0f976;">Our Key Subsidiaries</div>
+      <div class="content-section-label" style="color:#b0f976;">Global Network of Powerhouse Agencies</div>
+      <div class="content-section-body">Across our global brands — Dentsu Creative, Tag, Carat, iProspect, dentsu X, and Merkle — we deliver end-to-end experience transformation (EX) by integrating our services across Media, CXM, and Creative. Our business transformation (BX) mindset pushes the boundaries of sustainable growth for brands, people, and society.</div>
+    </div>
+    <div class="content-section">
+      <div class="content-section-label" style="color:#b0f976;">Our Key Brands</div>
       <div class="content-section-body">
-        <strong>Merkle</strong> — Our data-driven CX agency. Merkle specializes in identity resolution, loyalty, CRM, and technology implementation. Home to Merkury, our proprietary identity and data platform that powers anonymous resolution, tag management, and first-party data activation across the Adobe stack.<br><br>
+        <strong>Merkle</strong> — Our data-driven CX agency specializing in identity resolution, loyalty, CRM, and technology implementation. Home to Merkury, our proprietary identity and data platform that powers anonymous resolution, tag management, and first-party data activation across the Adobe stack. Many at Adobe work directly with Merkle solutioning leaders to implement, optimize, and operate across the entire Adobe Experience and Content Supply Chain stack.<br><br>
+        <strong>Dentsu Creative</strong> — Our global creative and media strategy brand, bringing compelling brand thinking, campaign development, and media strategy to the world's most ambitious organizations. One of our most significant relationships is serving as Adobe's own Agency of Record — we don't just recommend Adobe, we run on it ourselves.<br><br>
         <strong>Tag</strong> — Our end-to-end digital commerce and content agency. Tag handles high-volume creative production, localization, digital commerce operations, and content supply chain implementation at global scale.<br><br>
         <strong>dentsu X, Carat, iProspect</strong> — Our media and performance brands, managing full-funnel media planning, buying, and activation across paid, owned, and earned channels.
       </div>
@@ -331,11 +330,13 @@
       <div class="content-section-label" style="color:#b0f976;">What We Do With Adobe</div>
       <div class="clients-grid" style="grid-template-columns:1fr;">
         <div class="client-item"><div class="client-name">Data & Identity</div><div class="client-desc">AEP implementation, RTCDP, identity resolution via Merkury, schema governance, and audience activation</div></div>
-        <div class="client-item"><div class="client-name">CX & Personalization</div><div class="client-desc">AEM Sites, Adobe Commerce, Journey Optimizer, real-time personalization, and AI-driven experience orchestration</div></div>
+        <div class="client-item"><div class="client-name">Agentic AI & Automation</div><div class="client-desc">Custom AI models, Adobe App Builder, agentic workflows, and AI-powered migration, diagnostics, and orchestration</div></div>
         <div class="client-item"><div class="client-name">Content Supply Chain</div><div class="client-desc">GenStudio, Workfront, Firefly, AEM Assets — end-to-end creative production, automation, and brand governance</div></div>
+        <div class="client-item"><div class="client-name">CX & Personalization</div><div class="client-desc">AEM Sites, Adobe Commerce, Journey Optimizer, real-time personalization, and AI-driven experience orchestration</div></div>
         <div class="client-item"><div class="client-name">B2B Marketing</div><div class="client-desc">Adobe Journey Optimizer B2B, Marketo, account-based marketing, buying group engagement, and post-sale expansion</div></div>
         <div class="client-item"><div class="client-name">Loyalty & CRM</div><div class="client-desc">Merkury Loyalty+, Adobe Journey Optimizer, gamification, and lifecycle marketing for consumer and B2B brands</div></div>
-        <div class="client-item"><div class="client-name">Agentic AI & Automation</div><div class="client-desc">Custom AI models, Adobe App Builder, agentic workflows, and AI-powered migration, diagnostics, and orchestration</div></div>
+        <div class="client-item"><div class="client-name">Collaborative Workshops</div><div class="client-desc">Joint discovery sessions, capability showcases, and co-selling workshops designed to accelerate pipeline and deepen client relationships with Adobe</div></div>
+        <div class="client-item"><div class="client-name">Platform Activations</div><div class="client-desc">Hands-on platform enablement, sandbox builds, and live demo environments that bring Adobe solutions to life for prospective and existing clients</div></div>
       </div>
     </div>
   </div>
@@ -352,7 +353,7 @@
     </div>
     <div class="content-section">
       <div class="content-section-label" style="color:#00d6e9;">We're Practitioners, Not Consultants</div>
-      <div class="content-section-body">At Dentsu, we are the ones in the trenches building it — with you and our joint customers. Together, we have the power to transform how an entire marketing, sales, and technology organization thinks, creates, and performs.<br><br><strong>Because we live it every day.</strong></div>
+      <div class="content-section-body">At Dentsu, we are the ones in the trenches building it — with you and our joint customers. <strong>Together, we have the power to transform how an entire marketing, sales, and technology organization thinks, creates, and performs.</strong> Because we live it every day.</div>
     </div>
     <div class="content-section">
       <div class="content-section-label" style="color:#00d6e9;">The Real Problem</div>
@@ -500,9 +501,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B marketers targeting accounts that haven't raised their hand yet</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span></div>
           <div class="demo-summary">Identifies and activates in-market accounts before they ever raise their hand, using behavioral signals to trigger personalized outreach in real time.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B marketers targeting accounts that haven't raised their hand yet</div></div>
           <div class="takeaways-heading cl-b2b">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>No login required:</strong> Merkury resolves anonymous visitors at the account level — intent is actionable before any form fill.</div></div>
@@ -512,6 +513,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Firefly API in the loop:</strong> Personalized creative is generated via Firefly API and served based on the resolved intent profile.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Built on Merkury Tag:</strong> The Merkury tag layer does the identity work — no separate CDP integration or custom instrumentation required.</div></div>
           </div>
+          <div class="tools-heading cl-b2b">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span></div>
         </div></div>
       </div>
 
@@ -521,9 +524,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B marketers selling into complex, multi-stakeholder accounts</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span><span class="tag other-tag">Salesforce CRM</span></div>
           <div class="demo-summary">Orchestrates tailored content and timing across every member of a buying committee, closing the gap between awareness and pipeline.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B marketers selling into complex, multi-stakeholder accounts</div></div>
           <div class="takeaways-heading cl-b2b">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>One account, multiple journeys:</strong> AJO B2B manages the complexity of multi-role buying groups so marketers don't build separate campaigns per persona.</div></div>
@@ -533,6 +536,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Digitizing the buying committee:</strong> Every member can be identified, mapped, and engaged with a coordinated ABM strategy at scale and precision never possible before.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>AEP as the profile layer:</strong> Every buying group member's behavior feeds into AEP — the orchestration layer draws on live data, not static lists.</div></div>
           </div>
+          <div class="tools-heading cl-b2b">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span><span class="tag other-tag">Salesforce CRM</span></div>
         </div></div>
       </div>
 
@@ -542,9 +547,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B companies running both digital commerce and a direct sales motion</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span><span class="tag other-tag">Salesforce CRM</span><span class="tag other-tag">Marketo Sales Insight</span></div>
           <div class="demo-summary">Aligns marketing and sales around a shared account intelligence layer that surfaces the right signal to the right rep at the right moment.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B companies running both digital commerce and a direct sales motion</div></div>
           <div class="takeaways-heading cl-b2b">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Storefront knows the account:</strong> The Commerce experience adapts before login — no friction, no generic landing page for known accounts.</div></div>
@@ -554,6 +559,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Marketo Sales Insight:</strong> Sales reps see exactly what an account has done on the Commerce site — every page view, product interaction, and intent signal.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>No generic experiences:</strong> Pricing, product display, and content all adapt to the specific account — Commerce behaves like a dedicated sales portal.</div></div>
           </div>
+          <div class="tools-heading cl-b2b">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Merkury Tag</span><span class="tag other-tag">Custom AI Modeling</span><span class="tag other-tag">Salesforce CRM</span><span class="tag other-tag">Marketo Sales Insight</span></div>
         </div></div>
       </div>
 
@@ -563,9 +570,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B companies with a post-sale growth motion or customer success team</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Salesforce CRM</span><span class="tag other-tag">Marketo Sales Insight</span></div>
           <div class="demo-summary">Turns customer data into expansion opportunity by detecting adoption gaps and triggering upsell journeys before churn signals emerge.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-b2b"><div class="best-for-label cl-b2b">Best for</div><div class="best-for-text">B2B companies with a post-sale growth motion or customer success team</div></div>
           <div class="takeaways-heading cl-b2b">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Detect gaps early:</strong> AI models identify adoption gaps before they become churn signals — expansion conversations happen at the right time.</div></div>
@@ -575,6 +582,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>Firefly for relevance:</strong> Expansion creative is generated and personalized via Firefly API — the right message for the right product moment.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bb2b"></div><div class="takeaway-text"><strong>AEP as the data layer:</strong> Adobe Experience Platform unifies product usage, behavioral, and CRM data into the profile that drives every expansion decision.</div></div>
           </div>
+          <div class="tools-heading cl-b2b">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer B2B</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe Marketo</span><span class="tag adobe-tag">Firefly API</span><span class="tag other-tag">Salesforce CRM</span><span class="tag other-tag">Marketo Sales Insight</span></div>
         </div></div>
       </div>
 
@@ -596,9 +605,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Brands on AEM Sites or Adobe Commerce looking to activate anonymous traffic</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">AEM EDS</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe Commerce</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Merkury Tag Manager</span></div>
           <div class="demo-summary">Brings together Merkle's tag management across AEM Sites & Commerce to create personalized CX. Most personalization requires a login — this shows how Merkury resolves identity before that happens.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Brands on AEM Sites or Adobe Commerce looking to activate anonymous traffic</div></div>
           <div class="takeaways-heading cl-crm">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Anonymous ≠ invisible:</strong> Merkury resolves intent and demographic signals before any login — unknown visitors are still actionable.</div></div>
@@ -608,6 +617,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Commerce-aware:</strong> Personalization extends into Adobe Commerce — product display, pricing, and recommendations all respond to resolved identity.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>AJO orchestration:</strong> Adobe Journey Optimizer picks up the identity signals downstream and executes the right journey automatically.</div></div>
           </div>
+          <div class="tools-heading cl-crm">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">AEM EDS</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe Commerce</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Merkury Tag Manager</span></div>
         </div></div>
       </div>
 
@@ -617,9 +628,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Brands with customer data spread across multiple systems, CDPs, or legacy platforms</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">RTCDP</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag other-tag">Merkury Tag Manager</span><span class="tag other-tag">Custom AI Model</span></div>
           <div class="demo-summary">Merges fragmented identity data into a single, real-time profile that powers every downstream personalization and decision.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Brands with customer data spread across multiple systems, CDPs, or legacy platforms</div></div>
           <div class="takeaways-heading cl-crm">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Four systems, one profile:</strong> Watch RT-CDP stitch records from four siloed systems into a single customer profile in real time.</div></div>
@@ -629,6 +640,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Merkury enrichment:</strong> Merkury Tag Manager adds identity resolution before the profile is built — known and unknown visitors both get unified.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>AJO-ready output:</strong> The unified profile feeds directly into Adobe Journey Optimizer — no additional mapping or transformation required.</div></div>
           </div>
+          <div class="tools-heading cl-crm">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">RTCDP</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag other-tag">Merkury Tag Manager</span><span class="tag other-tag">Custom AI Model</span></div>
         </div></div>
       </div>
 
@@ -638,9 +651,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Consumer brands running loyalty programs or looking to increase repeat engagement</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe Captivate</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Merkury Loyalty+</span><span class="tag other-tag">Custom AI Model</span></div>
           <div class="demo-summary">Embeds behavioral incentives directly into the CX from email to web to drive repeat engagement and deepen brand affinity. See how it works with Burger King.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">Consumer brands running loyalty programs or looking to increase repeat engagement</div></div>
           <div class="takeaways-heading cl-crm">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Personalized, not broadcast:</strong> Every challenge and reward is tailored to the individual — not pushed to a segment or a generic tier.</div></div>
@@ -650,6 +663,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>AEP for intelligence:</strong> Adobe Experience Platform provides the behavioral data that makes each challenge and reward feel relevant, not random.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Stack-agnostic integration:</strong> The loyalty layer connects to existing infrastructure — no full-platform rebuild required.</div></div>
           </div>
+          <div class="tools-heading cl-crm">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe Captivate</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Merkury Loyalty+</span><span class="tag other-tag">Custom AI Model</span></div>
         </div></div>
       </div>
 
@@ -659,9 +674,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">AEP teams dealing with data quality issues that only show up after activation</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Snowflake</span><span class="tag other-tag">Databricks</span><span class="tag other-tag">Custom AI Model</span></div>
           <div class="demo-summary">Autonomously monitors AEP data quality, surfaces anomalies, and recommends fixes before bad data reaches downstream activation.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-crm"><div class="best-for-label cl-crm">Best for</div><div class="best-for-text">AEP teams dealing with data quality issues that only show up after activation</div></div>
           <div class="takeaways-heading cl-crm">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Autonomous monitoring:</strong> AI agents continuously scan AEP data quality without requiring manual QA runs or analyst time.</div></div>
@@ -671,6 +686,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Reduced data debt:</strong> Ongoing agentic monitoring prevents the accumulation of unresolved data issues that slow teams down over time.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcrm"></div><div class="takeaway-text"><strong>Built on App Builder:</strong> The diagnostic layer is deployed via Adobe App Builder — extensible, governable, and native to the Adobe ecosystem.</div></div>
           </div>
+          <div class="tools-heading cl-crm">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Snowflake</span><span class="tag other-tag">Databricks</span><span class="tag other-tag">Custom AI Model</span></div>
         </div></div>
       </div>
 
@@ -692,9 +709,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Retailers, B2C brands, or anyone running a digital storefront</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Brand Concierge</span><span class="tag other-tag">Custom AI Model</span><span class="tag other-tag">Merkury Tag Management</span></div>
           <div class="demo-summary">Deploys an AI-orchestrated layer across digital touchpoints that personalizes every interaction in real time, without human intervention.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Retailers, B2C brands, or anyone running a digital storefront</div></div>
           <div class="takeaways-heading cl-ai">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>No rules required:</strong> Personalization at this level used to take months of segments and engineering — the AI concierge does it in real time for every visitor.</div></div>
@@ -704,6 +721,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Dual-sided value:</strong> The storefront serves both the consumer and the agent — every adaptation is driven by data, not assumptions.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Flexible architecture:</strong> Can be scoped to a full Adobe stack or partial — AJO, AEM, and Brand Concierge all integrate modularly.</div></div>
           </div>
+          <div class="tools-heading cl-ai">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Brand Concierge</span><span class="tag other-tag">Custom AI Model</span><span class="tag other-tag">Merkury Tag Management</span></div>
         </div></div>
       </div>
 
@@ -713,9 +732,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Brands facing an AEM migration or large-scale site re-platform</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">AEM EDS</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Firefly API</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag other-tag">Custom AI Models</span></div>
           <div class="demo-summary">Automates the heavy lifting of AEM content migration, reducing manual effort and risk while preserving content structure and metadata integrity.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Brands facing an AEM migration or large-scale site re-platform</div></div>
           <div class="takeaways-heading cl-ai">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>AI-guided end-to-end:</strong> Section selection, field mapping, template assignment, and deployment to dev — no manual orchestration at any step.</div></div>
@@ -725,6 +744,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Live progress view:</strong> The dashboard shows migration progress by section, optimization scores, and a go-live Gantt in a single stakeholder view.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Multi-brand architecture:</strong> One AEM platform governs the main site, campaigns, and microsites under a unified Active Experience model.</div></div>
           </div>
+          <div class="tools-heading cl-ai">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">AEM Sites</span><span class="tag adobe-tag">AEM EDS</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Firefly API</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag other-tag">Custom AI Models</span></div>
         </div></div>
       </div>
 
@@ -734,9 +755,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Data engineers, architects, and AEP practitioners tired of tribal knowledge</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">RTCDP</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Custom AI Model</span></div>
           <div class="demo-summary">Accelerates AEP data readiness by intelligently mapping, validating, and governing schemas so teams spend less time wrangling data and more time activating it.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Data engineers, architects, and AEP practitioners tired of tribal knowledge</div></div>
           <div class="takeaways-heading cl-ai">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Full data inventory:</strong> A complete, digestible view of everything inside your AEP instance — schemas, datasets, and field definitions in one place.</div></div>
@@ -746,6 +767,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Proactive governance:</strong> Data quality issues and compliance gaps are surfaced before they reach activation — not after campaigns have already run.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>AEP acceleration:</strong> Teams spend less time wrangling schemas and more time building audiences, activating journeys, and driving outcomes.</div></div>
           </div>
+          <div class="tools-heading cl-ai">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag adobe-tag">RTCDP</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag other-tag">Custom AI Model</span></div>
         </div></div>
       </div>
 
@@ -755,9 +778,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Media planners, performance marketers, and agencies managing full-funnel campaigns</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Dentsu Connect</span><span class="tag other-tag">Custom AI Model</span><span class="tag other-tag">Dentsu Audience Builder</span><span class="tag other-tag">Dentsu Strategy Builder</span><span class="tag other-tag">Clinch</span></div>
           <div class="demo-summary">See how Dentsu's connected stack unifies media planning, creative personalization, and campaign activation across Dentsu Connect, Clinch, and beyond.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-ai"><div class="best-for-label cl-ai">Best for</div><div class="best-for-text">Media planners, performance marketers, and agencies managing full-funnel campaigns</div></div>
           <div class="takeaways-heading cl-ai">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>End-to-end in one stack:</strong> Media planning, audience building, creative personalization, and activation all run through Dentsu's connected platform.</div></div>
@@ -767,6 +790,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>AEP as the data foundation:</strong> Adobe Experience Platform provides the audience intelligence that powers targeting across the entire media stack.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bai"></div><div class="takeaway-text"><strong>Firefly for creative scale:</strong> Adobe Firefly generates on-brand creative variants at speed — reducing production time and legal risk simultaneously.</div></div>
           </div>
+          <div class="tools-heading cl-ai">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Dentsu Connect</span><span class="tag other-tag">Custom AI Model</span><span class="tag other-tag">Dentsu Audience Builder</span><span class="tag other-tag">Dentsu Strategy Builder</span><span class="tag other-tag">Clinch</span></div>
         </div></div>
       </div>
 
@@ -788,9 +813,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Agencies and in-house teams managing high-volume creative production and paid media</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag other-tag">Dentsu Connect</span></div>
           <div class="demo-summary">A Dentsu-configured GenStudio environment with enterprise guardrails, custom templates, and accelerated approval workflows built for high-velocity marketing teams.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Agencies and in-house teams managing high-volume creative production and paid media</div></div>
           <div class="takeaways-heading cl-csc">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>One integrated workspace:</strong> Creative production, AI content, audience targeting, and campaign execution run in a single coordinated workflow.</div></div>
@@ -800,6 +825,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Performance feeds back in:</strong> Live campaign data returns to GenStudio and informs the next production cycle — the system gets smarter over time.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>A flywheel, not a tool:</strong> Every campaign makes the next one more informed. GenStudio Dentsu+ is the operating system for creative, targeting, and execution.</div></div>
           </div>
+          <div class="tools-heading cl-csc">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag other-tag">Dentsu Connect</span></div>
         </div></div>
       </div>
 
@@ -809,9 +836,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Content teams and creative ops leads managing multi-stage production workflows</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Express</span><span class="tag adobe-tag">Workfront Planning</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag adobe-tag">Adobe Journey Optimizer</span></div>
           <div class="demo-summary">Connects content planning, production, and performance in a closed loop so every asset informs the next brief.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Content teams and creative ops leads managing multi-stage production workflows</div></div>
           <div class="takeaways-heading cl-csc">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Full supply chain on one screen:</strong> Seeing the entire content pipeline from brief to performance in a single view is something most teams have never experienced.</div></div>
@@ -821,6 +848,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Planning to activation:</strong> From Workfront Planning through production to AEM and GenStudio — every stage is connected and trackable.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Compounding efficiency:</strong> Each cycle through the continuum produces better briefs, faster production, and more relevant content — the system improves itself.</div></div>
           </div>
+          <div class="tools-heading cl-csc">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Express</span><span class="tag adobe-tag">Workfront Planning</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag adobe-tag">Adobe Journey Optimizer</span></div>
         </div></div>
       </div>
 
@@ -830,9 +859,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Marketing teams that re-enter brand settings into every new tool they onboard</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Adobe Express</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Workfront</span><span class="tag adobe-tag">Creative Cloud</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag other-tag">Custom AI Modeling</span></div>
           <div class="demo-summary">Monitors content output across channels and flags brand inconsistencies before they ship, keeping creative execution aligned to brand standards at scale.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Marketing teams that re-enter brand settings into every new tool they onboard</div></div>
           <div class="takeaways-heading cl-csc">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Brand setup automated:</strong> AI scrapes the organization's website and brand docs to extract palette, fonts, voice, personas, and campaigns — fully pre-populated.</div></div>
@@ -842,6 +871,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Governance at the source:</strong> Brand standards are enforced at the kit level — downstream tools pull from the same governed definitions automatically.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Reduces brand drift:</strong> When brand setup lives in one place and pushes everywhere, off-brand executions become structurally harder to produce.</div></div>
           </div>
+          <div class="tools-heading cl-csc">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Adobe Express</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Adobe App Builder</span><span class="tag adobe-tag">AEM Assets</span><span class="tag adobe-tag">Workfront</span><span class="tag adobe-tag">Creative Cloud</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">GenStudio for Performance Marketing</span><span class="tag other-tag">Custom AI Modeling</span></div>
         </div></div>
       </div>
 
@@ -851,9 +882,9 @@
           <div class="demo-trigger-right"><div class="demo-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
         </button>
         <div class="demo-body"><div class="demo-body-inner">
-          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Marketing ops and program managers running multi-team campaign initiatives</div></div>
-          <div class="tags-row"><span class="tag adobe-tag">Workfront Planner</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag adobe-tag">Adobe Analytics</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Figma</span></div>
           <div class="demo-summary">Coordinates AI agents across campaign initiatives to ensure goals, budgets, and content stay aligned as conditions change.</div>
+          <div class="demo-divider"></div>
+          <div class="best-for bf-csc"><div class="best-for-label cl-csc">Best for</div><div class="best-for-text">Marketing ops and program managers running multi-team campaign initiatives</div></div>
           <div class="takeaways-heading cl-csc">Key Takeaways</div>
           <div class="takeaways-grid">
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Campaign coordination at scale:</strong> Workfront connects planning, creative, and execution into one orchestrated workflow — no tool switching, no lost context.</div></div>
@@ -863,6 +894,8 @@
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Analytics closes the loop:</strong> Adobe Analytics data feeds performance back into the planning layer — the next initiative starts with real signal, not assumptions.</div></div>
             <div class="takeaway-item"><div class="takeaway-bullet bcsc"></div><div class="takeaway-text"><strong>Figma to production:</strong> Design work in Figma connects directly to the workflow — creative review and approval happen in the same system as execution.</div></div>
           </div>
+          <div class="tools-heading cl-csc">Tools Referenced in Demo</div>
+          <div class="tags-row"><span class="tag adobe-tag">Workfront Planner</span><span class="tag adobe-tag">Workfront Workflow</span><span class="tag adobe-tag">Adobe Journey Optimizer</span><span class="tag adobe-tag">Workfront Fusion</span><span class="tag adobe-tag">Adobe Analytics</span><span class="tag adobe-tag">Adobe Firefly</span><span class="tag adobe-tag">Adobe Experience Platform</span><span class="tag other-tag">Figma</span></div>
         </div></div>
       </div>
 
@@ -871,7 +904,7 @@
 
   <div style="height:24px"></div>
   <div style="text-align:center; padding: 0 20px 40px; position:relative; z-index:1;">
-    <p style="font-family:'Manrope',sans-serif; font-size:13px; color:#fff; line-height:1.6;">See us at Adobe Summit in booth <span style="color:#00d6e9; font-weight:700;">#1207</span>, a meeting, or an outing — let's win big together!</p>
+    <p style="font-family:'Manrope',sans-serif; font-size:15px; font-weight:700; color:#fff; line-height:1.6;">Meet our teams at Adobe Summit <span style="color:#00d6e9;">Booth #1207</span>, or connect with us at an outing or a meeting — let's win big together!</p>
   </div>
 
 </div>
